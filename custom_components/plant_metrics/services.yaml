@@ -1,0 +1,47 @@
+log_irrigation:
+  name: Log Irrigation Event
+  description: Record an irrigation event in mm or liters per plant/tree to reduce the root-zone water deficit for a plant or orchard block.
+  fields:
+    entry_id:
+      name: Plant Block Config Entry ID
+      description: Optional config entry ID of a specific plant block (applies to all blocks if omitted).
+      selector:
+        text:
+    amount_mm:
+      name: Irrigation Depth (mm)
+      description: Depth of irrigation applied in millimeters.
+      selector:
+        number:
+          min: 0.5
+          max: 100
+          step: 0.5
+          unit_of_measurement: "mm"
+    liters_per_tree:
+      name: Volume per Plant (Liters)
+      description: Irrigation volume applied per tree or plant in liters.
+      selector:
+        number:
+          min: 1
+          max: 500
+          step: 1
+          unit_of_measurement: "L"
+
+reset_water_balance:
+  name: Reset Root-Zone Water Deficit
+  description: Reset cumulative root-zone water depletion to 0.0 mm (field capacity) after soaking rain or full irrigation.
+  fields:
+    entry_id:
+      name: Plant Block Config Entry ID
+      description: Optional config entry ID of a specific plant block (applies to all blocks if omitted).
+      selector:
+        text:
+
+reset_seasonal_accumulators:
+  name: Reset Seasonal Chill & GDD Accumulators
+  description: Reset Chill Hours, Utah Chill Units, and Growing Degree Days (GDD) counters to 0.
+  fields:
+    entry_id:
+      name: Plant Block Config Entry ID
+      description: Optional config entry ID of a specific plant block (applies to all blocks if omitted).
+      selector:
+        text:

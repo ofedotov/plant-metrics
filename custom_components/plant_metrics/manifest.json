@@ -1,0 +1,13 @@
+{
+  "domain": "plant_metrics",
+  "name": "Plant & Orchard Metrics",
+  "codeowners": ["@ofedotov"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/ofedotov/plant-metrics",
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "issue_tracker": "https://github.com/ofedotov/plant-metrics/issues",
+  "requirements": [],
+  "version": "1.2.1"
+}

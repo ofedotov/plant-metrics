@@ -1,0 +1,90 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Plant & Orchard Metrics Setup",
+        "description": "Choose whether to add a Plant / Orchard Block (Hazelnut, Apple, Almond, Thuja, or Custom) or another Weather Station Hub.",
+        "menu_options": {
+          "plant_block": "Add Plant / Orchard Block (Hazelnut, Apple, Almond, Thuja)",
+          "weather_hub": "Add Weather Station Hub"
+        }
+      },
+      "weather_hub": {
+        "title": "Configure Weather Station Hub",
+        "description": "Bind your weather station entities (e.g., Ecowitt) to calculate site-wide psychrometric, solar PAR/DLI, FAO-56 ET0, spray window, and leaf wetness metrics.",
+        "data": {
+          "site_name": "Weather Hub Name",
+          "temperature_entity": "Outdoor Temperature Sensor",
+          "humidity_entity": "Outdoor Humidity Sensor",
+          "wind_speed_entity": "Wind Speed Sensor",
+          "wind_gust_entity": "Wind Gust Sensor",
+          "solar_radiation_entity": "Solar Radiation / Illuminance Sensor",
+          "pressure_entity": "Barometric Pressure Sensor",
+          "rain_rate_entity": "Rain Rate Sensor",
+          "rain_daily_entity": "Daily Rain Sensor",
+          "uv_entity": "UV Index Sensor",
+          "elevation": "Site Elevation (m above sea level)"
+        }
+      },
+      "plant_block": {
+        "title": "Add Plant / Orchard Block (Step 1 of 2)",
+        "description": "Select the parent Weather Hub and the plant species/cultivar profile (Hazelnut, Apple, Almond, Thuja, or Custom).",
+        "data": {
+          "block_name": "Block / Zone Name",
+          "weather_hub_entry_id": "Parent Weather Station Hub",
+          "plant_profile": "Plant Species & Cultivar Profile"
+        }
+      },
+      "plant_block_details": {
+        "title": "Plant Block Agronomic & Sensor Settings (Step 2 of 2)",
+        "description": "Customize chill & GDD thresholds, canopy & root-zone parameters, and optional WH51/WN31 soil & canopy sensors for this block.",
+        "data": {
+          "primary_chill_target": "Primary Bud Chill Target (Utah CU)",
+          "secondary_chill_target": "Pollinizer / Catkin Chill Target (Utah CU)",
+          "gdd_base_temp": "GDD Base Temperature (°C)",
+          "gdd_upper_temp": "GDD Upper Cutoff Temperature (°C)",
+          "canopy_area_m2": "Average Canopy Area per Plant (m²)",
+          "plants_count": "Number of Plants / Trees in Block",
+          "root_depth_mm": "Effective Root-Zone Depth (mm)",
+          "available_water_capacity_mm_m": "Soil Available Water Capacity (mm/m)",
+          "irrigation_efficiency": "Irrigation Application Efficiency",
+          "soil_moisture_entities": "Soil Moisture Sensors (e.g., Ecowitt WH51)",
+          "soil_temp_entity": "Root-Zone Soil Temperature Sensor (e.g., WN31/WH34)",
+          "canopy_temp_entity": "Shaded Canopy Temperature Probe (e.g., WN31)"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update Plant & Orchard Metrics Settings",
+        "data": {
+          "site_name": "Weather Hub Name",
+          "temperature_entity": "Outdoor Temperature Sensor",
+          "humidity_entity": "Outdoor Humidity Sensor",
+          "wind_speed_entity": "Wind Speed Sensor",
+          "wind_gust_entity": "Wind Gust Sensor",
+          "solar_radiation_entity": "Solar Radiation / Illuminance Sensor",
+          "pressure_entity": "Barometric Pressure Sensor",
+          "rain_rate_entity": "Rain Rate Sensor",
+          "rain_daily_entity": "Daily Rain Sensor",
+          "uv_entity": "UV Index Sensor",
+          "elevation": "Site Elevation (m)",
+          "primary_chill_target": "Primary Bud Chill Target (Utah CU)",
+          "secondary_chill_target": "Pollinizer / Catkin Chill Target (Utah CU)",
+          "gdd_base_temp": "GDD Base Temperature (°C)",
+          "gdd_upper_temp": "GDD Upper Cutoff Temperature (°C)",
+          "canopy_area_m2": "Average Canopy Area per Plant (m²)",
+          "plants_count": "Number of Plants / Trees in Block",
+          "root_depth_mm": "Effective Root-Zone Depth (mm)",
+          "available_water_capacity_mm_m": "Soil Available Water Capacity (mm/m)",
+          "irrigation_efficiency": "Irrigation Application Efficiency",
+          "soil_moisture_entities": "Soil Moisture Sensors",
+          "soil_temp_entity": "Root-Zone Soil Temperature Sensor",
+          "canopy_temp_entity": "Shaded Canopy Temperature Probe"
+        }
+      }
+    }
+  }
+}

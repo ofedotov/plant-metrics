@@ -1,0 +1,10 @@
+[project]
+name = "plant-metrics"
+version = "1.2.1"
+description = "Home Assistant custom integration for multi-species Plant & Orchard Analytics (Hazelnut, Apple, Almond, Sweet Cherry, Thuja, Container Conifers) using Ecowitt weather stations"
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
